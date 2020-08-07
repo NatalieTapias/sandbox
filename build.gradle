@@ -35,4 +35,9 @@ jar {
     manifest {
         attributes ('Main-Class': 'examples.Log4jExample')
     }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it)
+        }
+    }
 }
