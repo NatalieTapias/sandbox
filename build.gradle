@@ -31,6 +31,11 @@ application {
     mainClassName = 'examples.Log4jExample'
 }
 
+// using the Application plugin to use default JVM args specifying location of log4J configurationgr
+applicationDefaultJvmArgs = [
+        "-Dlog4j.configurationFile=file:src/log4j2.xml"
+]
+
 jar {
     manifest {
         attributes ('Main-Class': 'examples.Log4jExample')
