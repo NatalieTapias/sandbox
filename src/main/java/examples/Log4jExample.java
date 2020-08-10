@@ -8,8 +8,8 @@ public class Log4jExample {
 
   public static void main(String[] args) {
     logger.debug("log4j example: a sample debug statement");
-//    logger.info("log4j Sample info");
-//    logger.warn("log4j smaple warn");
+    logger.info("log4j Sample info");
+    logger.warn("log4j smaple warn");
 //    logger.error("log4j sample error");
 //    logger.fatal("log4j fatal");
   }
